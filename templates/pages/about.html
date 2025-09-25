@@ -1,4 +1,4 @@
-{% extends 'base.html' %} {% block content %}
+{% extends 'base.html' %} {% block content %} {% load static %}
 
     <section id="showcase-inner" class="py-5 text-white">
       <div class="container">
@@ -20,7 +20,7 @@
         <nav aria-label="breadcrumb">
           <ol class="breadcrumb">
             <li class="breadcrumb-item">
-              <a href="index.html"> <i class="fas fa-home"></i> Home</a>
+              <a href={% url 'pages:index' %}> <i class="fas fa-home"></i> Home</a>
             </li>
             <li class="breadcrumb-item active">About</li>
           </ol>
@@ -40,7 +40,7 @@
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sunt,
               pariatur!
             </p>
-            <img src="assets/img/about.jpg" alt="" />
+            <img src={% static 'img/about.jpg' %} alt="" />
             <p class="mt-4">
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Perspiciatis esse officia repudiandae ad saepe ex, amet neque quod
@@ -53,6 +53,7 @@
             <div class="card">
               <img
                 class="card-img-top"
+                {% comment %} fix image.html {% endcomment %}
                 src="assets/img/doctors/kyle.jpg"
                 alt="Seller of the month"
               />
@@ -78,6 +79,7 @@
         aperiam, unde aliquid at similique!
       </h4>
       <hr />
+      {% comment %} fix listings.html {% endcomment %}
       <a href="listings.html" class="btn btn-secondary text-white btn-lg"
         >View Our Featured Listings</a
       >
@@ -90,6 +92,7 @@
         <div class="row text-center">
           <div class="col-md-4">
             <img
+            {% comment %} fix doctor.html {% endcomment %}
               src="assets/img/doctors/kyle.jpg"
               alt=""
               class="rounded-circle mb-3 img-fluid"
@@ -106,6 +109,7 @@
 
           <div class="col-md-4">
             <img
+            {% comment %} fix doctor.html {% endcomment %}
               src="assets/img/doctors/emma.jpg"
               alt=""
               class="rounded-circle mb-3 img-fluid"
@@ -120,6 +124,7 @@
 
           <div class="col-md-4">
             <img
+            {% comment %} fix doctor.html {% endcomment %}
               src="assets/img/doctors/jenny.jpg"
               alt=""
               class="rounded-circle mb-3 img-fluid"
