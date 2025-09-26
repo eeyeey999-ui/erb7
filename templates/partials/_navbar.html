@@ -15,45 +15,30 @@
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <ul class="navbar-nav">
 
-            {% comment %} <li class="nav-item active mr-3"> {% endcomment %}
             <li {% if '/' == request.path %}
-              <li class="nav-item active mr-3">
+              class="nav-item active mr-3"
             {% else %}
-              <li class="nav-item mr-3">
+              class="nav-item mr-3"
             {% endif %}
             >
-
               <a class="nav-link" href={% url "pages:index" %}>Home</a>
             </li>
 
-            {% comment %} <li class="nav-item mr-3"> {% endcomment %}
             <li {% if 'about' in request.path %}
-              <li class="nav-item active mr-3">
+              class="nav-item active mr-3"
             {% else %}
-              <li class="nav-item mr-3">
+              class="nav-item mr-3"
             {% endif %}
             >
-
               <a class="nav-link" href={% url "pages:about" %}>About</a>
-            </li>
+            <li>
 
-            <li 
-              <li class="nav-item mr-3">            
-            >
+              <li class="nav-item mr-3">          
 
               <a class="nav-link" href={% url "listings:listings" %}
                 >Inpatient medical services</a
               >
-
             </li>
-
-
-            {% comment %}
-            <li class="nav-item mr-3">
-              <a class="nav-link" href="listings.html"
-                >Inpatient medical services</a
-              >
-            </li> {% endcomment %}
           </ul>
 
           <ul class="navbar-nav ml-auto">
