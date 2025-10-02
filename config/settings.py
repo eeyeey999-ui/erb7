@@ -40,6 +40,7 @@ DJANGO_APP = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.humanize',
     "debug_toolbar",
     ]
 
@@ -144,4 +145,4 @@ INTERNAL_IPS = [ "127.0.0.1",]
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-MEDIA_url = '/media/'
+MEDIA_URL = '/media/'
