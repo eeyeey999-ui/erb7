@@ -48,7 +48,8 @@ DJANGO_APP = [
 APPLICATION_APP = [
     'pages.apps.PagesConfig',
     'listings.apps.ListingsConfig',
-    'doctors.apps.DoctorsConfig'
+    'doctors.apps.DoctorsConfig',
+    'accounts.apps.AccountsConfig',
     ]
 
 INSTALLED_APPS = DJANGO_APP + APPLICATION_APP
