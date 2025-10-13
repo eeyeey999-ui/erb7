@@ -12,13 +12,14 @@
             <h4><i class="fas fa-sign-in-alt"></i> Login</h4>
             </div>
             <div class="card-body">
-            {% comment %}  {% endcomment %}
-            <form action="{% url 'pages:index' %}" method="POST">
+            <form action="{% url 'accounts:login' %}" method="POST">
                 {% csrf_token %}
                 <div class="form-group">
                 <label for="username">Username</label>
                 <input
                     type="text"
+                    {% comment %} id for click username then highlight frame of the "login table" {% endcomment %}
+                    id="username"
                     name="username"
                     class="form-control"
                     required
@@ -26,7 +27,7 @@
                 </div>
 
                 <div class="form-group">
-                <label for="password2">Password</label>
+                <label for="password">Password</label>
                 <input
                     type="password"
                     name="password"
