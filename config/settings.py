@@ -44,6 +44,7 @@ DJANGO_APP = [
     'django.contrib.humanize',
     "debug_toolbar",
     "taggit",
+    "widget_tweaks",
     ]
 
 APPLICATION_APP = [
@@ -51,6 +52,7 @@ APPLICATION_APP = [
     'listings.apps.ListingsConfig',
     'doctors.apps.DoctorsConfig',
     'accounts.apps.AccountsConfig',
+    'contacts.apps.ContactsConfig',
     ]
 
 INSTALLED_APPS = DJANGO_APP + APPLICATION_APP
